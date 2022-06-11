@@ -493,7 +493,7 @@ html {
     width: 30px;
     height: 30px;
     margin-right: 6px;
-    background-image: url("svg/Vector.svg");
+    background-image: url("svg/logo.svg");
 }
 .logo_name{
 
@@ -548,7 +548,7 @@ html {
 
 /*start preview*/
 .preview_block{
-    position: absolute;
+
     width: 1440px;
     height: 765px;
     left: 0px;
@@ -645,6 +645,105 @@ html {
     font-size: 24px;
     line-height: 32px;
     color: #FFFFFF;
+    border: 0;
 }
 
 /*end preview*/
+
+
+
+/*start steps*/
+.steps_block{
+    margin-left: 131px;
+    margin-top: 80px;
+    width: 1177px;
+    height: 247px;
+}
+
+.steps_content{
+    display: flex;
+    flex-direction: row;
+    width: 1177px;
+}
+.steps_title{
+    font-family: 'Red Hat Text', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 53px;
+    color: #F2785C;
+    text-align: center;
+}
+
+.step_pict{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 16px;
+    background-color: #F2785C;
+
+}
+
+.step_icon_1{
+    background-image: url("svg/st1.svg");
+    width: 50px;
+    height: 45px;
+}
+
+.step_icon_2{
+
+    background-image: url("svg/st2.svg");
+    width: 52px;
+    height: 52px;
+}
+
+.step_icon_3{
+
+    background-image: url("svg/st3.svg");
+    width: 60px;
+    height: 45px;
+}
+.step_first{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 247px;
+    height: 154px;
+    margin-right: 230px;
+    margin-top: 40px;
+}
+
+.step_second{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 222px;
+    height: 154px;
+    margin-right: 161px;
+    margin-top: 40px;
+}
+
+.step_third{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 317px;
+    height: 154px;
+    margin-top: 40px;
+}
+
+.step_description{
+    font-family: 'Aleo', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #0D606F;
+    margin-top: 30px;
+}
+/*end steps*/
+
+
+
