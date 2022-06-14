@@ -460,8 +460,8 @@ html {
 }
 
 .wrapper {
-    min-width: 1440px;
-    margin: 0 auto;
+    width: 1440px;
+    margin: -90px auto;
     vertical-align: baseline;
 }
 
@@ -470,12 +470,13 @@ html {
 
 /*start header*/
 .header{
+
     display: flex;
-    position: absolute;
-    width: 100%;
+    position: relative;
+    width: 1440px;
     height: 90px;
-    left: 0px;
-    top: 0px;
+    left:auto;
+    top: 90px;
     background: rgba(242, 120, 92, 0.7);
     box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
 }
@@ -550,17 +551,18 @@ html {
 
 /*start preview*/
 .preview_block{
+    position: relative;
 
     width: 1440px;
     height: 765px;
     left: 0px;
-    top: 0px;
+    top: 90px;
     background-image: url("img/garrett-parker-DlkF4-dbCOU-unsplash 1.jpg");
     z-index: -1;
 }
 
 .preview_content{
-    position: absolute;
+    position: relative;
     width: 892px;
     height: 422px;
     left: 120px;
@@ -663,11 +665,15 @@ html {
 }
 
 .steps_content{
+    position: relative;
+    top: 90px;
     display: flex;
     flex-direction: row;
     width: 1177px;
 }
 .steps_title{
+    position: relative;
+    top: 90px;
     font-family: 'Red Hat Text', serif;
     font-style: normal;
     font-weight: 500;
@@ -755,6 +761,8 @@ html {
     margin-top: 97px;
 }
 .title_des{
+    position: relative;
+    top: 90px;
     display: flex;
     justify-content: center;
     font-family: 'Red Hat Text', serif;
@@ -766,16 +774,22 @@ html {
 }
 
 .wrapper_img{
+    position: relative;
+    top: 90px;
     display: flex;
     flex-direction: row;
     margin-top: 46px;
     height: 800px;
     margin-bottom: 24px;
+    overflow:hidden;
+    z-index: -5;
 
 }
 .left_position{
     margin-left: -540px;
     margin-right: 60px;
+    overflow:hidden;
+
 }
 
 .active_position{
@@ -784,6 +798,8 @@ html {
 }
 .right_position{
     margin-right: -540px;
+    overflow:hidden;
+
 }
 
 .image_name{
@@ -798,6 +814,8 @@ html {
     color: #fff;
 }
 .indicators{
+    position: relative;
+    top: 90px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -820,6 +838,8 @@ html {
     border-radius: 50%;
 }
 .more{
+    position: relative;
+    top: 90px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -850,14 +870,11 @@ html {
 
 
 
-/*start stories*/
-.stories_block{
-    width: 1201px;
+/*!*start stories*!*/
 
-    background-color: rgba(255, 255, 255, 0.7);
-
-}
 .stories_title{
+    position: relative;
+    top: 90px;
     width: 335px;
     margin-left: 552px;
     font-family: 'Red Hat Text', serif;
@@ -869,12 +886,16 @@ html {
     margin-bottom: 40px;
 }
 .wrapper_stories{
+    z-index: -5;
+    position: relative;
+    top: 90px;
     width: 1442px;
     height: 1331px;
     background: url("img/Rectangle 33.png") no-repeat;
 
 }
 .bg_image{
+
     width: 1445px;
     height: 1270px;
     background: rgba(255, 255, 255, 0.7);
@@ -884,6 +905,9 @@ html {
     flex-direction: row;
 }
 
+.story_img.first{
+    margin-top: 40px;
+}
 .story_img{
     width: 400px;
     height: 250px;
@@ -891,6 +915,9 @@ html {
     margin-top: 30px;
     filter: drop-shadow(0px 4px 4px #0D606F);
     border-radius: 16px;
+}
+.story_title.first{
+    margin-top: 40px;
 }
 .story_title{
     font-family: 'Aleo', serif;
@@ -900,7 +927,7 @@ html {
     line-height: 42px;
     color: #0D606F;
     margin-left: 40px;
-    margin-top: 40px;
+    margin-top: 30px;
 
 }
 
@@ -917,6 +944,7 @@ html {
 
 }
 .story_btn{
+top:0;
     margin-top: 40px;
     margin-bottom: 50px;
 }
@@ -928,11 +956,12 @@ html {
 .footer{
     height: 61px;
     position: relative;
-    bottom:61px;
+    top: 120px;
     display: flex;
 }
 .footer_name{
-    margin-top: 14px;
+
+    margin-top: 20px;
     margin-left: 590px;
     margin-right: 328px;
     font-family: 'Red Hat Text', serif;
